@@ -1,7 +1,7 @@
 all: start
 
 # Top-Level Recipes
-start: npm-install npm-start
+start: npm-install npm-start | node-command
 
 clean:
 	git clean -fdx
